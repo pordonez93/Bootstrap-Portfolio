@@ -1,0 +1,30 @@
+body{
+    margin-bottom: 60px;
+}
+
+.header-row{
+    width: 960px;
+    margin: auto;
+}
+
+.main-container{
+    width: 960px;
+    margin: auto;
+}
+
+p{
+    line-height: 1.6;
+    color: #777777;
+}
+
+.footer-container{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #666666;
+    color: white;
+    font-size: 12px;
+    padding-top: 20px;
+    border-top: 8px solid #4aaaa5;
+    text-align: center;
+}
