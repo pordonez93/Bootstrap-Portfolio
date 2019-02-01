@@ -1,73 +1,163 @@
-<!DOCTYPE <!DOCTYPE html>
+<!Doctype <!DOCTYPE html>
 <html>
 <head>
-    <title>Perla Ordonez</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perla Ordonez</title>
+  <!-- Reset CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/CSS/reset.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/CSS/style.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
-<body>
-    <!-- header with navbar and name -->
-    <div class="header">
-        <div class="container-fluid">
-            <div class="header-row">
-
-                    <div class="title">
-                        Perla Ordonez
-                    </div>
-
-                    <ul class="nav justify-content-end">
-                            <li class="nav-item">
-                              <a class="nav-link active" href="index.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="portfolio.html">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                    </ul>
-            </div>  
+<body id="topPage">
+  <!-- style so that there's padding on top of container so nnavbar doesn't block off top -->
+    <nav class="navbar navbar-light fixed-top bg-light">
+        <a class="navbar-brand" href="#topPage">Perla</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- remove later and fix with padding in style.css -->
+   
+    <div class="container" data-spy="scroll" data-target="#navbar-example2" data-offset="50">
+      <header id="about" class="main-header d-flex">
+        <div class="container my-auto">
+              <div class="row">
+                <div class="col-sm-12 text-center">
+                  <h1 class="section-heading">Aspiring Full Stack Web Developer</h1>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm-6 text-center">
+                    <h2 class="section-heading">My Background</h2>
+                    <p>Sed libero justo, lacinia at efficitur non, porta et ligula. Quisque varius odio ac dictum pretium. Quisque mollis posuere quam dictum maximus. Nam porttitor lorem mauris, eu feugiat quam feugiat eget. Pellentesque at sollicitudin sapien, nec viverra metus. Nam nunc metus, convallis id urna in, viverra elementum turpis. Vivamus ipsum erat, dictum sit amet nunc nec, finibus dictum justo.</p>
+                  </div>
+                  <div class="col-sm-6 text-center">
+                    <img src="assets/Images/profile-image.jpg" class="rounded-circle" width="250" height="250">
+                  </div>
+              </div>
+          </div> 
+      </header>
+<!-- Skills Section -->
+      <section id="skills">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2 class="section-heading">Programming Languages and Tools</h2>
+          </div>
         </div>
-    </div>
-
-<br>
-
-<div class="main-container">
-    <!-- row for main content heading -->
-    <div class="row">
-        <div class="col-md-12">
-           <h1 class="main-heading">
-            About Me
-            </h1> 
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <!-- style image sizes down -->
+            <img class="img-fluid" id="logo1" src="assets/Images/html5-css-javascript-logos.png">
+            <img class="img-fluid" id="logo2" src="assets/Images/node.png">
+          </div>
         </div>
-    </div>
-    <!-- row for main content holding image and text -->
-    <div class="row">
-        <div class="col-md-12">
-            <br>
-            <img src="assets/images/profile_picture.jpg" class="rounded float-left w-25 p-3" alt="Picture of Perla">
-            <p>
-                    Spicy jalapeno bacon ipsum dolor amet culpa esse strip steak, in ullamco tongue tempor elit andouille cupim nisi. Pork burgdoggen velit pastrami capicola eu tenderloin quis qui anim. Sausage ipsum est mollit corned beef, esse consectetur short loin fugiat beef andouille. Occaecat shank tail, filet mignon aliqua ut t-bone flank. Sunt strip steak sint, et cupim ham hock non sirloin cow. Pariatur dolore reprehenderit kielbasa. Flank pork frankfurter, cow quis commodo bacon. 
-            <br>
-            Nulla commodo exercitation, nostrud biltong short ribs sed minim id porchetta pancetta drumstick officia duis deserunt. Ullamco salami kielbasa, voluptate jerky tri-tip ex fugiat pork chop eu ea ut commodo corned beef. Pastrami lorem aliqua bresaola pork loin. Boudin in bacon, t-bone do ex velit brisket sint proident capicola pancetta elit. Hamburger capicola cupim ullamco pariatur ea salami reprehenderit sunt shoulder.
-            <br>
-            Pastrami in strip steak, officia beef cow nisi. Et pork venison tail in magna veniam fugiat andouille picanha proident burgdoggen. Turducken pork loin lorem proident ullamco picanha bresaola. Ham sirloin sausage, cupim labore kielbasa burgdoggen biltong pig consequat cow ground round meatball exercitation.
-            </p>
-        </div>
-    </div>
-</div>
-
-<footer class="footer">
-        <div class="footer-container">
-          Copyright&#169
-        </div>
-</footer>
-
+      </section>
     
+<!-- Portfolio Section -->
+      <section id="portfolio">
+        <div class="row">
+          <div class="col-sm-12 text-center" id="portfolio-images">
+              <div class="holder">
+              <img class="img-fluid" src="assets/Images/crystal-collector.jpg">
+                <div class="portfolio-caption">
+                  <a class="project-name" href="https://pordonez93.github.io/unit-4-game/" target="_blank">Crystal Collector</a>
+                  <br>
+                  <a class="project-name" href="https://github.com/pordonez93/unit-4-game" target="_blank">GitHub Link</a>
+                </div>
+              </div>
+            <div class="holder">
+              <img class="img-fluid" src="assets/Images/GifTastic.jpg">
+              <div class="portfolio-caption">
+                  <a class="project-name" href="https://pordonez93.github.io/GifTastic/" target="_blank">GifTastic</a>
+                  <br>
+                  <a class="project-name" href="https://github.com/pordonez93/GifTastic" target="_blank">GitHub Link</a>
+                </div>
+            </div>
+            <div class="holder">
+              <img class="img-fluid" src="assets/Images/train-schedule.jpg">
+              <div class="portfolio-caption">
+                  <a class="project-name" href="https://pordonez93.github.io/Train-Scheduler/" target="_blank">Train Scheduler</a>
+                  <br>
+                  <a class="project-name" href="https://github.com/pordonez93/Train-Scheduler" target="_blank">GitHub Link</a>
+              </div>
+            </div>
+            <div class="holder">
+              <img class="img-fluid" src="assets/Images/right-side-of-the-bed.jpeg.jpg">
+              <div class="portfolio-caption">
+                  <a class="project-name" href="https://cait-sidener.github.io/Right-Side-of-the-Bed/" target="_blank">Right Side of the Bed</a>
+                  <br>
+                  <a class="project-name" href="https://github.com/cait-sidener/Right-Side-of-the-Bed" target="_blank">GitHub Link</a>
+              </div>
+            </div>            
+          </div>
+        </div>
+      </section>
+<!-- Contact Section -->
+      <section id="contact">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2 class="section-heading">Contact Me!</h2>
+            <p>Sed libero justo, lacinia at efficitur non, porta et ligula.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 text-center">
+            <a href="https://www.linkedin.com/in/perla-ordonez/" target="_blank">
+            <i class="fa fa-linkedin-square" style="font-size:48px"></i>
+            </a>
+          </div>
+          <div class="col-sm-3 text-center">
+              <a href="https://github.com/pordonez93" target="_blank">
+              <i class="fa fa-github-square" style="font-size:48px"></i>
+              </a>
+          </div>
+          <div class="col-sm-3 text-center">
+              <a href="https://twitter.com/ordonezperla" target="_blank">
+              <i class="fa fa-twitter-square" style="font-size:48px"></i>
+              </a>
+          </div>
+          <div class="col-sm-3 text-center">
+              <a href="mailto:perla.ordonez07@gmail.com" target="_blank">
+              <i class="fa fa-envelope" style="font-size:48px"></i>
+              </a>
+          </div>
+        </div>
+      </section>
+<!-- Resume Download -->
+      <section id="resume">
+          <div class="row">
+              <div class="col-sm-12 text-center">
+                <h2 class="section-heading">Download My Resume Here!</h2>
+                <a href="" target="_blank">
+                  <i class="fa fa-download" style="font-size:48px"></i>
+                </a>
+              </div>
+          </div>
+      </section>
+    </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Logic -->
+  <script src="assets/JavaScript/logic.js"></script>
 </body>
 </html>
