@@ -11,145 +11,162 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Lazy Sizes -->
+  <script src="http://afarkas.github.io/lazysizes/lazysizes.min.js" async=""></script>
 </head>
+
 <body id="topPage">
-  <!-- style so that there's padding on top of container so nnavbar doesn't block off top -->
-    <nav class="navbar navbar-light fixed-top bg-light">
-        <a class="navbar-brand" href="#topPage">Perla</a>
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- remove later and fix with padding in style.css -->
-   
-    <div class="container" data-spy="scroll" data-target="#navbar-example2" data-offset="50">
-      <header id="about" class="main-header d-flex">
-        <div class="container my-auto">
-              <div class="row">
-                <div class="col-sm-12 text-center">
-                  <h1 class="section-heading">Aspiring Full Stack Web Developer</h1>
-                </div>
-              </div>
-              <div class="row">
-                  <div class="col-sm-6 text-center">
-                    <h2 class="section-heading">My Background</h2>
-                    <p>Sed libero justo, lacinia at efficitur non, porta et ligula. Quisque varius odio ac dictum pretium. Quisque mollis posuere quam dictum maximus. Nam porttitor lorem mauris, eu feugiat quam feugiat eget. Pellentesque at sollicitudin sapien, nec viverra metus. Nam nunc metus, convallis id urna in, viverra elementum turpis. Vivamus ipsum erat, dictum sit amet nunc nec, finibus dictum justo.</p>
-                  </div>
-                  <div class="col-sm-6 text-center">
-                    <img src="assets/Images/profile-image.jpg" class="rounded-circle" width="250" height="250">
-                  </div>
-              </div>
-          </div> 
-      </header>
+  <nav class="navbar navbar-light sticky-top bg-light" >
+    <a class="navbar-brand" href="#topPage">Perla Ordonez</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="" target="_blank">Resume</a>
+        </li>
+      </ul>
+  </nav>
+<!-- Main Container for all Sections -->
+<div class="container" data-spy="scroll" data-target="#navbar-example2" data-offset="50">
+  <header id="about" class="main-header d-flex">
+    <div class="container my-auto">
+
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h1 class="section-heading">Aspiring Full Stack Web Developer</h1>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col-sm-6 text-center">
+            <h2 class="section-heading">My Background</h2>
+            <p>Sed libero justo, lacinia at efficitur non, porta et ligula. Quisque varius odio ac dictum pretium. Quisque mollis posuere quam dictum maximus. Nam porttitor lorem mauris, eu feugiat quam feugiat eget. Pellentesque at sollicitudin sapien, nec viverra metus. Nam nunc metus, convallis id urna in, viverra elementum turpis. Vivamus ipsum erat, dictum sit amet nunc nec, finibus dictum justo.</p>
+          </div>
+          <div class="col-sm-6 text-center">
+            <img src="assets/Images/profile-image.jpg" class="rounded-circle" width="250" height="250">
+          </div>
+      </div>
+
+    </div> 
+  </header>
 <!-- Skills Section -->
-      <section id="skills">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <h2 class="section-heading">Programming Languages and Tools</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <!-- style image sizes down -->
-            <img class="img-fluid" id="logo1" src="assets/Images/html5-css-javascript-logos.png">
-            <img class="img-fluid" id="logo2" src="assets/Images/node.png">
-          </div>
-        </div>
-      </section>
-    
+<section id="skills">
+
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h2 class="section-heading">Programming Languages and Tools</h2>
+    </div>
+  </div>
+  <br>
+<!-- Logos for skills learned -->
+  <div class="row">
+    <div class="col-sm-12 margin-top text-center" >
+      <img class="img-fluid" src="assets/Images/html.png" alt="HTML" style="height: 150px;">
+      <img class="img-fluid" src="assets/Images/css.png" alt="CSS" style="height: 150px;">
+      <img class="img-fluid" src="assets/Images/javascript.png" alt="JavaScript" style="height: 150px;">
+      <img class="img-fluid" src="assets/Images/node.png" alt="Node" style="height: 150px;">
+    </div>
+  </div>
+
+</section>
+
 <!-- Portfolio Section -->
-      <section id="portfolio">
-        <div class="row">
-          <div class="col-sm-12 text-center" id="portfolio-images">
-              <div class="holder">
-              <img class="img-fluid" src="assets/Images/crystal-collector.jpg">
-                <div class="portfolio-caption">
-                  <a class="project-name" href="https://pordonez93.github.io/unit-4-game/" target="_blank">Crystal Collector</a>
-                  <br>
-                  <a class="project-name" href="https://github.com/pordonez93/unit-4-game" target="_blank">GitHub Link</a>
-                </div>
-              </div>
-            <div class="holder">
-              <img class="img-fluid" src="assets/Images/GifTastic.jpg">
-              <div class="portfolio-caption">
-                  <a class="project-name" href="https://pordonez93.github.io/GifTastic/" target="_blank">GifTastic</a>
-                  <br>
-                  <a class="project-name" href="https://github.com/pordonez93/GifTastic" target="_blank">GitHub Link</a>
-                </div>
-            </div>
-            <div class="holder">
-              <img class="img-fluid" src="assets/Images/train-schedule.jpg">
-              <div class="portfolio-caption">
-                  <a class="project-name" href="https://pordonez93.github.io/Train-Scheduler/" target="_blank">Train Scheduler</a>
-                  <br>
-                  <a class="project-name" href="https://github.com/pordonez93/Train-Scheduler" target="_blank">GitHub Link</a>
-              </div>
-            </div>
-            <div class="holder">
-              <img class="img-fluid" src="assets/Images/right-side-of-the-bed.jpeg.jpg">
-              <div class="portfolio-caption">
-                  <a class="project-name" href="https://cait-sidener.github.io/Right-Side-of-the-Bed/" target="_blank">Right Side of the Bed</a>
-                  <br>
-                  <a class="project-name" href="https://github.com/cait-sidener/Right-Side-of-the-Bed" target="_blank">GitHub Link</a>
-              </div>
-            </div>            
-          </div>
+<section id="portfolio">
+
+  <div class="row">
+    <div class="col-md-4 col-sm-6 margin-top">
+        <div class="image-thumbnail" style="height: 350px;">
+            <div class="img-caption">
+          <h3 class="text-center">Crystal Collector</h3>
+          <a href="https://pordonez93.github.io/unit-4-game/" target="_blank" class="btn btn-primary btn-block">
+            View project<i class="fa fa-chevron-circle-right fa-align-right"></i>
+          </a>
         </div>
-      </section>
-<!-- Contact Section -->
-      <section id="contact">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <h2 class="section-heading">Contact Me!</h2>
-            <p>Sed libero justo, lacinia at efficitur non, porta et ligula.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-3 text-center">
-            <a href="https://www.linkedin.com/in/perla-ordonez/" target="_blank">
-            <i class="fa fa-linkedin-square" style="font-size:48px"></i>
+        <img class="lazyload" data-sizes="auto" data-src ="assets/Images/crystal-collector.jpg" alt="Crystal Collector"/>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 margin-top">
+        <div class="image-thumbnail" style="height: 350px;">
+            <div class="img-caption">
+            <h3 class="text-center">GifTastic</h3>
+            <a href="https://pordonez93.github.io/unit-4-game/" target="_blank" class="btn btn-primary btn-block">
+              View project<i class="fa fa-chevron-circle-right fa-align-right"></i>
             </a>
           </div>
-          <div class="col-sm-3 text-center">
-              <a href="https://github.com/pordonez93" target="_blank">
-              <i class="fa fa-github-square" style="font-size:48px"></i>
-              </a>
-          </div>
-          <div class="col-sm-3 text-center">
-              <a href="https://twitter.com/ordonezperla" target="_blank">
-              <i class="fa fa-twitter-square" style="font-size:48px"></i>
-              </a>
-          </div>
-          <div class="col-sm-3 text-center">
-              <a href="mailto:perla.ordonez07@gmail.com" target="_blank">
-              <i class="fa fa-envelope" style="font-size:48px"></i>
-              </a>
-          </div>
+          <img  class="lazyload" data-sizes="auto" data-src ="assets/Images/GifTastic.jpg" alt="GifTastic"/>
         </div>
-      </section>
-<!-- Resume Download -->
-      <section id="resume">
-          <div class="row">
-              <div class="col-sm-12 text-center">
-                <h2 class="section-heading">Download My Resume Here!</h2>
-                <a href="" target="_blank">
-                  <i class="fa fa-download" style="font-size:48px"></i>
-                </a>
-              </div>
-          </div>
-      </section>
     </div>
+
+    <div class="col-md-4 col-sm-6 margin-top">
+        <div class="image-thumbnail" style="height: 350px;">
+            <div class="img-caption">
+          <h3 class="text-center">Train Scheduler</h3>
+          <a href="https://pordonez93.github.io/unit-4-game/" target="_blank" class="btn btn-primary btn-block">
+            View project<i class="fa fa-chevron-circle-right fa-align-right"></i>
+          </a>
+        </div>
+        <img class="lazyload" data-sizes="auto" data-src ="assets/Images/train-schedule.jpg" alt="Train Scheduler"/>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 margin-top">
+        <div class="image-thumbnail" style="height: 350px;">
+          <div class="img-caption">
+            <h3 class="text-center">Right Side of the Bed</h3>
+            <a href="https://pordonez93.github.io/unit-4-game/" target="_blank" class="btn btn-primary btn-block">
+              View project<i class="fa fa-chevron-circle-right fa-align-right"></i>
+            </a>
+          </div>
+          <img class="lazyload" src ="assets/Images/right-side-of-the-bed.jpg" alt="Right Side of the Bed"/>
+        </div>
+    </div>
+
+  </div>
+</section>
+
+</div>
+
+<!-- Contact Section -->
+<footer>
+  <div class="container text-center"> 
+    <!-- icons with external links -->
+    <div class="row">
+      <div class="col-sm-12">
+        <a href="https://www.linkedin.com/in/perla-ordonez/" target="_blank" class="icons">
+        <i class="fa fa-linkedin-square" style="font-size:38px"></i>
+        </a>
+        <a href="https://github.com/pordonez93" target="_blank" class="icons">
+        <i class="fa fa-github-square" style="font-size:38px"></i>
+        </a>
+        <a href="https://twitter.com/ordonezperla" target="_blank" class="icons">
+        <i class="fa fa-twitter-square" style="font-size:38px"></i>
+        </a>
+        <a href="mailto:perla.ordonez07@gmail.com" target="_blank" class="icons">
+        <i class="fa fa-envelope" style="font-size:38px"></i>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="triangle img-center">
+          <a href="#topPage" class="top-page" title="Back to top">
+            <i class="fa fa-arrow-up"></i>
+          </a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -157,7 +174,5 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <!-- Jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!-- Logic -->
-  <script src="assets/JavaScript/logic.js"></script>
 </body>
 </html>

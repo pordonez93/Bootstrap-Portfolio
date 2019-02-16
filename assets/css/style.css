@@ -1,52 +1,79 @@
 body{
     font-family: "Georgia, Times, Times New Roman, serif";
-
+    background-image: url("../Images/wet_snow.png");
 }
-header{
-    background-color: #293844;
-    padding-top:100px;
+
+img.img-fluid, .icons{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.img-thumbnail{
+    position: relative;
+    padding-bottom: 66.549%;
+}
+
+img.lazyloaded {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    transition:all .4s linear;
+}
+
+.img-caption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #3c444b;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition:all .4s ease-in-out;
+    color: #fff;
+    /* z-index: 2; */
+}
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+footer{
+    /* position: fixed; */
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: #33485f;
     color: white;
+    padding-top: 20px;
+    text-align: center;
 }
-#skills{
-    background-color: #fff1dd;
-    padding-top: 100px;
-    width: 100%;
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid #06BC9B;
 }
-#portfolio{
-    background-color: #404640;
-    width: 100%;
-    padding-top: 100px;
 
-}
-#contact, #resume{
-    background-color: #d8aeae;
-    width: 100%;  
-    padding-top: 100px;
-  
-}
-.img-fluid{
-    max-width: 200px;
-    max-height: 200px;
-}
-.holder{
-    float: left;
-    position:relative;
-    right: -15%;
-}
-#portfolio-images{
+.img-center{
     margin: auto;
 }
-.portfolio-caption{
-    background:#293844;
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    color: white;
-    opacity: .9;
+
+.top-page {
+    display: inline-block;
+    margin-left: -8px;
+    margin-top: 15px;
 }
-a.project-name{
+.fa{
     color:white;
 }
+navbar{
+    background-color:white;
+}
+a.nav-link{
+    color: #06BC9B;
+    font-weight: bold;
+}
+
